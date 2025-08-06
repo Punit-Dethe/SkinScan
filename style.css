@@ -1,0 +1,175 @@
+/* Gemini card and section styling */
+.gemini-card {
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(60, 72, 120, 0.10);
+  padding: 2rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.08rem;
+  color: #22223b;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gemini-card .section {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem 1rem 1.2rem;
+  border-radius: 10px;
+}
+.gemini-card .section h2 {
+  display: inline-block;
+  margin: 0 0 0.5rem 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.gemini-card .section .icon {
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+.gemini-card .section:nth-of-type(1) { background: #e0e7ff; color: #3730a3; }
+.gemini-card .section:nth-of-type(2) { background: #fef9c3; color: #b45309; }
+.gemini-card .section:nth-of-type(3) { background: #f1f5f9; color: #334155; }
+.gemini-card .section:nth-of-type(4) { background: #dcfce7; color: #166534; }
+.gemini-card .section:nth-of-type(5) { background: #fee2e2; color: #b91c1c; }
+
+.gemini-card ul, .gemini-card ol {
+  margin: 0.5em 0 0.5em 1.5em;
+  padding: 0;
+  list-style-position: inside;
+}
+.gemini-card ul ul, .gemini-card ol ol, .gemini-card ul ol, .gemini-card ol ul {
+  margin-left: 1.2em;
+}
+.gemini-card li {
+  margin: 0.2em 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  background: none;
+  margin-top: 32px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #4f46e5;
+  letter-spacing: 1px;
+  margin: 0 0 18px 0;
+  text-align: center;
+  font-family: 'Inter', Arial, sans-serif;
+  text-shadow: 0 2px 12px rgba(60, 72, 120, 0.08);
+}
+
+.container {
+  max-width: 440px;
+  margin: 64px auto 0 auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 22px;
+  box-shadow: 0 8px 40px 0 rgba(60, 72, 120, 0.13), 0 1.5px 8px 0 rgba(99,102,241,0.08);
+  padding: 44px 36px 36px 36px;
+  text-align: center;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.container:hover {
+  box-shadow: 0 12px 56px 0 rgba(99,102,241,0.18), 0 2px 12px 0 rgba(60, 72, 120, 0.10);
+  background: #f5f7ff;
+}
+
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #2d3a5a;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  color: #6366f1;
+  margin-bottom: 1.7rem;
+  font-size: 1.13rem;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  background: linear-gradient(90deg, #818cf8 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#uploadForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+input[type="file"] {
+  border: 1.5px solid #a5b4fc;
+  border-radius: 10px;
+  padding: 10px 8px;
+  background: #f1f5ff;
+  width: 100%;
+  font-size: 1rem;
+  color: #3730a3;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+input[type="file"]:hover, input[type="file"]:focus {
+  border: 1.5px solid #6366f1;
+  box-shadow: 0 0 0 2px #a5b4fc33;
+}
+
+button {
+  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+  transition: background 0.18s, box-shadow 0.18s, transform 0.12s;
+  letter-spacing: 0.2px;
+}
+button:hover {
+  background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+  box-shadow: 0 4px 16px rgba(99,102,241,0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+
+#preview img {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(99,102,241,0.13), 0 1.5px 8px 0 rgba(60, 72, 120, 0.10);
+  border: 2px solid #a5b4fc;
+  transition: box-shadow 0.18s, border 0.18s;
+}
+
+.result {
+  margin-top: 2rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 1.3rem;
+  color: #22223b;
+  font-size: 1.08rem;
+  min-height: 60px;
+  box-shadow: 0 1px 8px rgba(99,102,241,0.07);
+  text-align: left;
+  word-break: break-word;
+  border: 1.5px solid #e0e7ff;
+  transition: box-shadow 0.18s, border 0.18s;
+}

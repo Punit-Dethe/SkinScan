@@ -1,0 +1,22 @@
+# Node/npm artifacts (if you add npm tooling later)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# API keys and sensitive files
+.env
+
+# VSCode settings
+.vscode/
+
+# Build output (if any in future)
+dist/
+build/
+
+# Log files
+*.log
+
+# Ignore API key in app.js (if you ever move it to a config)
+app.config.js
